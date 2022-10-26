@@ -1,0 +1,36 @@
+/* styles.css */
+
+/* Add styles here to customize the appearance of your app */
+
+/* p#notice {
+  animation: 3s linear 1s infinite running slidein;
+} */
+:root {
+  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+  font-family: var(--system-ui);
+}
+
+#notice {
+  height: 100vh;
+  width: 100vw;
+
+  /* animation: bounce-around 100s linear infinite alternate; */
+  animation-name: bounce-around;
+  animation-duration: 100s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes bounce-around {
+  0%  { transform: translateX(0)   translateY(00.00%); color: red; }
+ 16%  { transform: translateX(85%) translateY(14.00%); color: orange; }
+ 33%  { transform: translateX(0)   translateY(29.00%); color: yellow; }
+ 50%  { transform: translateX(85%) translateY(44%); color: green; }
+ 67%  { transform: translateX(0)   translateY(59%); color: blue; }
+ 83%  { transform: translateX(85%) translateY(74%); color: indigo; }
+ 100% { transform: translateX(0)   translateY(88%); color: violet; }
+}
